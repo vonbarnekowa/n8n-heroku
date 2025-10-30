@@ -6,5 +6,6 @@ WORKDIR /home/node/packages/cli
 ENTRYPOINT []
 
 COPY ./entrypoint.sh /
+RUN npm install jimp
 RUN chmod +x /entrypoint.sh
 CMD ["/entrypoint.sh"]
