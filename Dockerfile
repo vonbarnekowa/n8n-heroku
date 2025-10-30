@@ -6,6 +6,8 @@ WORKDIR /home/node/packages/cli
 ENTRYPOINT []
 
 COPY ./entrypoint.sh /
-RUN npm install jimp
+
+RUN npm install -g jimp
+
 RUN chmod +x /entrypoint.sh
 CMD ["/entrypoint.sh"]
